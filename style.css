@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(41, 237, 7);
+}
+
+/* Styling header */
+.header {
+    overflow: hidden;
+    background-color: rgb(249, 238, 29);
+    padding: 20px 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(15, 14, 14);
+    position: sticky; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 90%; 
+    z-index: 1000;
+}
+
+/* Styling icon */
+.icon {
+    display: none;
+    font-size: 30px;
+    
+
+}
+
+
+/* Styling burger */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: monospace;
+
+    
+}
+/* Styling logo */
+.header .logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: monospace;
+
+}
+
+/* action when cursor toward to ahref */
+.header a:hover {
+    margin: 5px;
+    border-radius: 3px;
+    background-color: rgb(232, 247, 122);
+    color: white;
+    border: 1px solid black;
+}
+
+/* Styling ahref about and contact */
+.header-right {
+    float: right;
+    display: block;
+}
+
+/* Styling main-class */
+.main-class {
+
+    font-family: monospace;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling h1 in main-class */
+.main-class h1 {
+    margin: 25px;
+}
+
+/* Styling into input1 and input2 */
+.main-class .input-class .input1, .main-class .input-class .input2 {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(41, 237, 7) ;
+}
+
+/* Action when curser toward input1 and input2 */
+.input1:hover, .input2:hover {
+    border-radius: 3px;
+    box-shadow: 3px 3px black;
+}
+
+/* Styling paragraph into main-class */
+.main-class p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* styling input class */
+.input-class {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+/* Styling button submit */
+.btn-submit {
+    margin: 35px;
+    padding: 5px;
+    max-width: 500px;
+    background-color: rgb(249, 238, 29);
+    font-family: monospace;
+    border-radius: 3px;
+    
+}
+
+/* Styling button back */
+.btnBack {
+    margin: 35px;
+    padding: 5px;
+    max-width: 500px;
+    background-color: rgb(249, 238, 29);
+    font-family: monospace;
+    border-radius: 3px;
+    
+    
+}
+
+/* action when cursor toward button submit and button back */
+.btn-submit:hover, .btnBack:hover {
+    color: white;
+    background-color:rgb(232, 247, 122);
+    box-shadow: 3px 3px black;
+    
+}
+
+/* Styling paragraph */
+.para {
+    font-size: xx-large;
+    font-weight: bolder;
+    
+}
+
+/* Styling about and contact */
+.about, .contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling content into about and content */
+.about-content, .contact-content {
+    text-align: center;
+    font-family: monospace;
+    margin:175px;
+}
+
+/* Styling h1 into about content */
+.about-content h1 {
+    font-weight: bolder;
+}
+
+/* Styling paragraph into about content and contact content */
+.about-content p, .contact-content p{
+margin-top: 150px;
+font-size: larger;
+font-weight: bold;
+}
+
+/* Styling h1 into contact content */
+.contact-content h1 {
+    font-weight: bolder;
+}
+
+/* Styling footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(249, 238, 29);
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    padding: .5em;
+    font-family: monospace;
+}
+
+/* Styling ahref into footer and contact-content */
+.footer a, .contact-content a {
+    color: black;
+    font-weight: bolder;
+}
+
+/* Responsive */
+@media  screen and (max-width: 768px){
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        overflow: hidden;
+        background-color:rgb(249, 238, 29);
+    }
+
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+
+    .main-class {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: max-content;
+    }
+
+    .main-class h1 {
+        font-size: larger;
+    }
+
+    .input-class {
+        float: none;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    #links {
+        display: none;
+    }
+
+    /* Style the hamburger menu */
+    .icon {
+        /* background: black; */
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        right: 10px;
+        top:21px;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .header a:hover {
+        background-color: rgb(232, 247, 122);
+        color: black;
+    }
+
+    /* Show the menu when the user clicks on the icon */
+    .responsive #links {
+        display: block;
+    }
+}
